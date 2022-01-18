@@ -2,15 +2,13 @@ import React from 'react';
 
 const TodoList = (props) => {
 
+    ///// bold styling from App.css \\\\\
     const todoClasses = ["bold"];
 
+    ///// is item property complete is true - sets style \\\\\
     if (props.todo.complete) {
-      todoClasses.push("line-through italic");
+        todoClasses.push("line-through italic");
     }
-    // const handleNewTodoSubmit = (event) => {
-    //     event.preventDefault();
-    //     console.log(props.newTodo);
-    // }
 
     return (
         <div className="mt-3">
